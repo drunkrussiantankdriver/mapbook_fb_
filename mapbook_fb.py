@@ -1,13 +1,9 @@
-users:list=[
-    {'name':'Filip','location':'Sieradz','posts:':2},
-    {'name':'Oliwier','location':'Zamość','posts:':3},
-    {'name':'Jakub','location':'Warszawa','posts:':500},
-    {'name':'Konrad','location':'Lublin','posts:':10},
-]
+from utils.model import users
+from utils.controller import get_user_info
 
 
-def get_user_info(users_data:list)->None:
-    for user in users_data:
-        print(f'witaj {user['name']}')
+def main():
+    get_user_info(users)
 
-def get_user_info(users)
+if __name__ == '__main__':
+    main()
