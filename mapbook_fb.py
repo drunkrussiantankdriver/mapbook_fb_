@@ -1,6 +1,6 @@
-from not1 import add_user
-from utils.model import users
-from utils.controller import get_user_info, add_user, edit_user, users.pop
+from gui import add_user
+from utils.tk_crud import users
+from utils.crude import get_user_info, add_user, edit_user, users.pop
 
 
 def main():
